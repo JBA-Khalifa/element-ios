@@ -2017,7 +2017,7 @@ const NSTimeInterval kResizeComposerAnimationDuration = .05;
             [self roomInputToolbarViewDidTapFileUpload];
         }]];
     }
-    if (RiotSettings.shared.roomScreenAllowPollsAction)
+    if (BuildSettings.roomScreenAllowPollsAction)
     {
         [actionItems addObject:[[RoomActionItem alloc] initWithImage:[UIImage imageNamed:@"action_poll"] andAction:^{
             MXStrongifyAndReturnIfNil(self);
